@@ -4,8 +4,8 @@
 
 function sayHello(name)
 {
-    var print = `Hello, ${name}!`;
-    console.log(print);
+    const helloMessage = `Hello, ${name}!`;
+    console.log(helloMessage);
 }
 
 //----------------------------------------------------------------------------------------------------------------------
