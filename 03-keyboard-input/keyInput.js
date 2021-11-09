@@ -12,7 +12,12 @@ keypress(process.stdin);
 // listen for the "keypress" event
 process.stdin.on('keypress', function (ch, key)
 {
-    // Code goes here
+    if (key.ctrl === true && key.name === 'd')
+    {
+        process.exit();
+    }
+
+    console.log(`The key pressed is the '${key.name}' key.`);
 });
 
 //----------------------------------------------------------------------------------------------------------------------
