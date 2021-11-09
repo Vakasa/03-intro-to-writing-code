@@ -9,7 +9,8 @@ const path = require('path');
 
 function writeFile(location, contents)
 {
-    // Code goes here
+    const absoluteLocation = path.resolve(location);
+    fs.writeFileSync(absoluteLocation, contents);
 }
 
 //----------------------------------------------------------------------------------------------------------------------

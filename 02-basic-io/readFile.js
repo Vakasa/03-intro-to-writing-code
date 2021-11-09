@@ -9,7 +9,9 @@ const path = require('path');
 
 function readFile(location)
 {
-    // Code goes here
+    const absLoc = path.resolve(location);
+    const fileCon = fs.readFileSync(absLoc, { encoding: 'utf8' });
+    console.log (fileCon);
 }
 
 //----------------------------------------------------------------------------------------------------------------------
