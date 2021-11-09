@@ -4,7 +4,8 @@
 
 function sayHello(name)
 {
-    // Code goes here
+    const helloMessage = `Hello, ${name}!`;
+    console.log(helloMessage);
 }
 
 //----------------------------------------------------------------------------------------------------------------------
